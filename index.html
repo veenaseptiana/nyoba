@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #00509e, #74c0fc);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .birthday-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #333;
+        }
+
+        .birthday-image img {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .birthday-message {
+            font-size: 1.5rem;
+            margin: 20px 10px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            display: inline-block;
+            color: #e3f2fd;
+        }
+
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1b6ca8;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .play-button:hover {
+            background-color: #1f7dc1;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="birthday-title">Happy Birthday, My Love!</h1>
+        <div class="birthday-image">
+            <!-- Gambar kue ulang tahun -->
+            <img src="https://images.unsplash.com/photo-1589872278673-5a453c062a96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGNha2V8ZW58MHx8fHwxNjgyODM3NDU2&ixlib=rb-1.2.1&q=80&w=1080" alt="Kue Ulang Tahun">
+        </div>
+        <p class="birthday-message">
+            Semoga hari ini penuh dengan kebahagiaan dan cinta. <br> Aku bersyukur atas kehadiranmu dalam hidupku. 💖
+        </p>
+        <button class="play-button" onclick="playMusic()">Putar Musik 🎶</button>
+    </div>
+
+    <!-- Musik Ulang Tahun -->
+    <audio id="birthday-music" src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" loop></audio>
+
+    <footer>
+        Dengan cinta, dari aku untukmu. 💕
+    </footer>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById("birthday-music");
+            music.play();
+            alert("Musik sedang diputar! Selamat menikmati! 🎵");
+        }
+    </script>
+</body>
+</html>
